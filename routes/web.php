@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CmsController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -18,6 +19,9 @@ foreach (config('tenancy.central_domains') as $domain) {
             Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
             Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
         });
+
+        Route::get('/cms', [CmsController::class, 'index'])->name('cms');
+        Route::get('/show', [CmsController::class, 'show'])->name('show');
 
     });
 }

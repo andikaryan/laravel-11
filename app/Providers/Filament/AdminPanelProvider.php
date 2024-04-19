@@ -36,7 +36,7 @@ class AdminPanelProvider extends PanelProvider
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
             ->pages([
-                Pages\Dashboard::class,
+                // Pages\Dashboard::class,
             ])
             ->discoverWidgets(in: app_path('Filament/Widgets'), for: 'App\\Filament\\Widgets')
             ->widgets([
@@ -57,11 +57,16 @@ class AdminPanelProvider extends PanelProvider
             ->authMiddleware([
                 Authenticate::class,
             ])
-                ->navigationItems([
-                    NavigationItem::make('Preview')
-                    ->url(fn () => 'http://' . Tenant::where('id', auth()->user()->tenant_id)->value('slug') . '.' . config('app.central_domain'))
-                    ->icon('heroicon-o-eye')
-                    ->sort(-3),
+            ->navigationItems([
+                NavigationItem::make('Your Site')
+                ->url(fn () => route('show'))
+                ->icon('heroicon-o-eye')
+                ->sort(-2)
+                ->openUrlInNewTab(),
+                NavigationItem::make('Back to Dashboard')
+                ->url(fn()=>route('dashboard'))
+                ->icon('heroicon-o-chevron-left')
+                ->sort(-3),
             ])
             ;
     }
