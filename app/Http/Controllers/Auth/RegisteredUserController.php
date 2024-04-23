@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use App\Models\Content;
+use App\Models\Page;
 use App\Models\Tenant;
 use App\Models\User;
 use Illuminate\Auth\Events\Registered;
@@ -53,6 +55,15 @@ class RegisteredUserController extends Controller
             );
         }
 
+        $page_content = Page::create([
+            'tenant_id' => $tenant->id,
+            'type' => 'content',
+        ]
+        );
+
+        $content = Content::create([
+            'page_id' => $page_content->id,
+        ]);
 
         $centralDomain = config('app.central_domain');
         $domain = $tenant->domains()->create([
