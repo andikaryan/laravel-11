@@ -77,7 +77,6 @@ class RegisteredUserController extends Controller
         ]
         );
 
-
         $centralDomain = config('app.central_domain');
         $domain = $tenant->domains()->create([
             'domain' => "$tenant->slug.$centralDomain",
