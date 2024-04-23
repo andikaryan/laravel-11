@@ -19,6 +19,7 @@ class CreateTenantsTable extends Migration
         Schema::create('tenants', function (Blueprint $table) {
             $table->id();
             $table->string('slug');
+            $table->foreignId('template_id')->nullable()->constrained('templates')->nullOnDelete();
             $table->string('name')->nullable();
             $table->integer('account_plan')->default(Tenant::FREE);
             $table->boolean('is_active')->default(true);
