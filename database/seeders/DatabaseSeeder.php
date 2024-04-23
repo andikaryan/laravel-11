@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\Content;
+use App\Models\Industry;
 use App\Models\Page;
 use App\Models\Template;
 use App\Models\Tenant;
@@ -18,9 +19,22 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        $template = Template::create(
+        $industry = Industry::create(
             [
                 'name' => "Tech",
+            ]
+        );
+
+        $industry = Industry::create(
+            [
+                'name' => "Salon",
+            ]
+        );
+
+        $template = Template::create(
+            [
+                'name' => "Tech1210222",
+                'industry_id' => 1,
             ]
         );
 

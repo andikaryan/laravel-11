@@ -11,9 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('templates', function (Blueprint $table) {
+        Schema::create('industries', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('industry_id')->nullable()->constrained('industries')->nullOnDelete();
             $table->string('name');
             $table->timestamps();
         });
@@ -24,6 +23,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('templates');
+        Schema::dropIfExists('industries');
     }
 };
