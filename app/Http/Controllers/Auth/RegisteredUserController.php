@@ -65,6 +65,13 @@ class RegisteredUserController extends Controller
             'page_id' => $page_content->id,
         ]);
 
+        $page = Page::create([
+            'tenant_id' => $tenant->id,
+            'type'=>'products',
+        ]
+        );
+
+
         $centralDomain = config('app.central_domain');
         $domain = $tenant->domains()->create([
             'domain' => "$tenant->slug.$centralDomain",
