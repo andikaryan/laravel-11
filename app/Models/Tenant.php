@@ -10,6 +10,8 @@ use Stancl\Tenancy\Database\Concerns\HasDomains;
 class Tenant extends BaseTenant implements TenantWithDatabase
 {
     use HasDatabase, HasDomains;
+    const FREE = 1;
+    const CUSTOM_DOMAIN = 2;
 
     public static function getCustomColumns() : array
     {

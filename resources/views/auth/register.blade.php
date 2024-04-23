@@ -16,6 +16,36 @@
             <x-input-error :messages="$errors->get('email')" class="mt-2" />
         </div>
 
+        <!-- Custom SubDomain -->
+        <div class="mt-4">
+            <x-input-label for="domain" :value="__('Custom Subdomain')" />
+            <select id="domain" name="domain" class="block mt-1 w-full bg-gray-900 text-white" required onchange="toggleForm()">
+                <option value="0" disabled selected>--- SELECT OPTION ---</option>
+                <option value="yes">{{ __('Yes') }}</option>
+                <option value="no">{{ __('No') }}</option>
+            </select>
+
+            <div id="formContainer" style="display: none;">
+                <x-input-label for="domain_name" :value="__('Subdomain Name')" />
+                <x-text-input id="domain_name" class="block mt-1 w-full" type="text" name="domain_name" :value="old('domain_name')" autocomplete="domain_name" />
+            </div>
+
+            <x-input-error :messages="$errors->get('domain')" class="mt-2" />
+        </div>
+
+        <script>
+            function toggleForm() {
+                var selectedOption = document.getElementById("domain").value;
+                var formContainer = document.getElementById("formContainer");
+                if (selectedOption === "yes") {
+                    formContainer.style.display = "block";
+                } else {
+                    formContainer.style.display = "none";
+                }
+            }
+        </script>
+
+
         <!-- Password -->
         <div class="mt-4">
             <x-input-label for="password" :value="__('Password')" />

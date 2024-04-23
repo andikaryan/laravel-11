@@ -37,11 +37,21 @@ class RegisteredUserController extends Controller
             'password' => ['required', 'confirmed', Rules\Password::defaults()],
         ]);
 
-        $tenant = Tenant::create(
-            [
-                'slug' => STR::slug($request->name.'-'.Str::random(6).date("smd")),
-            ]
-        );
+        if($request->domain === 'yes'){
+            $tenant = Tenant::create(
+                [
+                    'slug' => Str::slug($request->domain_name),
+                    'account_plan' => Tenant::CUSTOM_DOMAIN
+                ]
+            );
+        }else{
+            $tenant = Tenant::create(
+                [
+                    'slug' => Str::slug($request->name.'-'.str::random(6).date("smd")),
+                    'account_plan' => Tenant::FREE
+                ]
+            );
+        }
 
 
         $centralDomain = config('app.central_domain');
