@@ -52,6 +52,12 @@ class DatabaseSeeder extends Seeder
         ]
         );
 
+        $page = Page::create([
+            'tenant_id' => $tenant->id,
+            'type'=>'testimony',
+        ]
+        );
+
         $centralDomain = config('app.central_domain');
         $domain = $tenant->domains()->create([
             'domain' => $tenant->slug . '.' . $centralDomain,
