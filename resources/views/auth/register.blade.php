@@ -45,6 +45,19 @@
             }
         </script>
 
+        {{-- Template --}}
+        <div class="mt-4">
+            <x-input-label for="template" :value="__('Template')" />
+            <select name="template" id="template"
+                class="block w-full mt-1 border-gray-300 focus:border-indigo-500  focus:ring-indigo-500  rounded-md shadow-sm bg-gray-900 text-white">
+                <option value="0">--- SELECT Template ---</option>
+                @foreach ($templates as $template)
+                <option value="{{ $template->id }}">{{ $template->name }}
+                </option>
+                @endforeach
+            </select>
+            <x-input-error :messages="$errors->get('category')" class="mt-2" />
+        </div>
 
         <!-- Password -->
         <div class="mt-4">

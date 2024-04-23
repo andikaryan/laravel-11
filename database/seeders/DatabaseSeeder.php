@@ -33,7 +33,7 @@ class DatabaseSeeder extends Seeder
 
         $template = Template::create(
             [
-                'name' => "Tech1210222",
+                'name' => "Salon",
                 'industry_id' => 1,
             ]
         );

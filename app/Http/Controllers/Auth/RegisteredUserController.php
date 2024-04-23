@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\Models\Content;
 use App\Models\Page;
+use App\Models\Template;
 use App\Models\Tenant;
 use App\Models\User;
 use Illuminate\Auth\Events\Registered;
@@ -23,7 +24,8 @@ class RegisteredUserController extends Controller
      */
     public function create(): View
     {
-        return view('auth.register');
+        $templates = Template::all();
+        return view('auth.register', compact('templates'));
     }
 
     /**
@@ -43,6 +45,7 @@ class RegisteredUserController extends Controller
             $tenant = Tenant::create(
                 [
                     'slug' => Str::slug($request->domain_name),
+                    'template_id' => (int)$request->template,
                     'account_plan' => Tenant::CUSTOM_DOMAIN
                 ]
             );
@@ -50,6 +53,7 @@ class RegisteredUserController extends Controller
             $tenant = Tenant::create(
                 [
                     'slug' => Str::slug($request->name.'-'.str::random(6).date("smd")),
+                    'template_id' => (int)$request->template,
                     'account_plan' => Tenant::FREE
                 ]
             );
