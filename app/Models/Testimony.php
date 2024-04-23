@@ -5,15 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Product extends Model
+class Testimony extends Model
 {
     use HasFactory;
-    protected $fillable = [
+
+    protected $fillable=[
         'page_id',
-        'slug',
-        'title',
-        'image',
-        'description',
-        'price'
+        'name',
+        'content'
     ];
 }

@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+use App\Models\Tenant;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -19,6 +20,10 @@ class CreateTenantsTable extends Migration
             $table->id();
             $table->string('slug');
             $table->string('name')->nullable();
+            $table->integer('account_plan')->default(Tenant::FREE);
+            $table->boolean('is_active')->default(true);
+            $table->integer('max_product')->default(5);
+            $table->integer('max_testimony')->default(5);
             $table->timestamps();
             $table->json('data')->nullable();
         });
