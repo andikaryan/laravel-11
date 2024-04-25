@@ -27,7 +27,7 @@ class Tenant extends BaseTenant implements TenantWithDatabase
             'max_testimony'
         ];
     }
-
+    
     public function template(): BelongsTo
     {
         return $this->belongsTo(Template::class);

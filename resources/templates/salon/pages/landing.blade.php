@@ -1,23 +1,23 @@
 @extends('layouts.main')
 @section('content')
 <!-- jumbotron-section -->
-@include('layouts.jumbotron')
+@include('salon.layouts.jumbotron')
 <!-- jumbotron-section end -->
 
 <!-- overview -->
-@include('layouts.overview')
+@include('salon.layouts.overview')
 <!-- overview end -->
 
 <!-- product-section -->
-@include('layouts.products')
+@include('salon.layouts.products')
 <!-- product-section -->
 
 <!-- testimonial-section -->
-@include('layouts.testimonials')
+@include('salon.layouts.testimonials')
 <!-- testimonial-section end -->
 
 <!-- contactus -->
-@include('layouts.contactus')
+@include('salon.layouts.contactus')
 <!-- contactus end -->
 
 @endsection

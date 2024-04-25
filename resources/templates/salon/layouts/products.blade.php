@@ -9,36 +9,36 @@
                         <div class="three-item-carousel owl-carousel owl-theme owl-nav-none owl-dots-style-one centred">
                             <div class="service-block-one">
                                 <div class="inner-box">
-                                    <figure class="image-box"><a href="{{ route('detail') }}"><img src="assets/images/service/news-2.jpg" alt=""></a></figure>
+                                    <figure class="image-box"><a href="{{ tenant_route('detail', $product->id) }}"><img src="assets/images/service/news-2.jpg" alt=""></a></figure>
                                     <div class="lower-content">
-                                        <h4><a href="{{ route('detail') }}">Nail <br />Cutting</a></h4>
+                                        <h4><a href="">Nail <br />Cutting</a></h4>
                                         <p>lorem is free text to used.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="service-block-one">
                                 <div class="inner-box">
-                                    <figure class="image-box"><a href="{{ route('detail') }}"><img src="assets/images/service/news-2.jpg" alt=""></a></figure>
+                                    <figure class="image-box"><a href=""><img src="assets/images/service/news-2.jpg" alt=""></a></figure>
                                     <div class="lower-content">
-                                        <h4><a href="{{ route('detail') }}">Hair <br />Cutting</a></h4>
+                                        <h4><a href="">Hair <br />Cutting</a></h4>
                                         <p>lorem is free text to used.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="service-block-one">
                                 <div class="inner-box">
-                                    <figure class="image-box"><a href="{{ route('detail') }}"><img src="assets/images/service/news-2.jpg" alt=""></a></figure>
+                                    <figure class="image-box"><a href=""><img src="assets/images/service/news-2.jpg" alt=""></a></figure>
                                     <div class="lower-content">
-                                        <h4><a href="{{ route('detail') }}">Hair <br />Cutting</a></h4>
+                                        <h4><a href="">Hair <br />Cutting</a></h4>
                                         <p>lorem is free text to used.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="service-block-one">
                                 <div class="inner-box">
-                                    <figure class="image-box"><a href="{{ route('detail') }}"><img src="assets/images/service/news-2.jpg" alt=""></a></figure>
+                                    <figure class="image-box"><a href=""><img src="assets/images/service/news-2.jpg" alt=""></a></figure>
                                     <div class="lower-content">
-                                        <h4><a href="{{ route('detail') }}">Computer <br> Kece</a></h4>
+                                        <h4><a href="">Computer <br> Kece</a></h4>
                                         <p>lorem is free text to used.</p>
                                     </div>
                                 </div>

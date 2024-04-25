@@ -21,19 +21,19 @@ class DatabaseSeeder extends Seeder
     {
         $industry = Industry::create(
             [
-                'name' => "Tech",
+                'name' => "tech",
             ]
         );
 
         $industry = Industry::create(
             [
-                'name' => "Salon",
+                'name' => "salon",
             ]
         );
 
         $template = Template::create(
             [
-                'name' => "Salon",
+                'name' => "salon",
                 'industry_id' => 1,
             ]
         );
