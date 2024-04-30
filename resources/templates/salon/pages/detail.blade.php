@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('salon.layouts.main')
 @section('content')
 <section class="service-details">
     <div class="auto-container">
@@ -9,13 +9,13 @@
                         <div class="two-column">
                             <div class="row align-items-center clearfix">
                                 <div class="col-lg-6 col-md-6 col-sm-12 image-column">
-                                    <figure class="image"><img src="assets/images/service/news-2.jpg" alt=""></figure>
+                                    <figure class="image"><img src="{{url($product->image)}}" alt=""></figure>
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-12 text-column">
                                     <div class="text">
-                                        <h2>Hair Cuttings</h2>
-                                        <h4 class="price">Rp.50.000</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet harum aut nihil quo laborum eius inventore doloribus earum, illo ipsam maxime ipsa magni.</p>
+                                        <h2>{{$product->title}}</h2>
+                                        <h4 class="price">{{$product->price}}</h4>
+                                        <p>{{$product->description}}</p>
                                     </div>
                                 </div>
                             </div>

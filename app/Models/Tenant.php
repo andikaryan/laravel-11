@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Stancl\Tenancy\Database\Models\Tenant as BaseTenant;
 use Stancl\Tenancy\Contracts\TenantWithDatabase;
@@ -27,9 +28,11 @@ class Tenant extends BaseTenant implements TenantWithDatabase
             'max_testimony'
         ];
     }
-    
+
     public function template(): BelongsTo
     {
         return $this->belongsTo(Template::class);
     }
+
+
 }

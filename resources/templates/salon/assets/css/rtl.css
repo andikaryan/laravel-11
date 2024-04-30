@@ -1,11 +1,11 @@
 
 
 .rtl {
-  direction: rtl; 
+  direction: rtl;
 }
 
 .ltr {
-  direction: ltr; 
+  direction: ltr;
 }
 
 .rtl .main-header .header-top .text{
@@ -92,7 +92,7 @@
   margin-right: 37px !important;
 }
 
-.rtl .main-menu .navigation > li > ul > li > a, 
+.rtl .main-menu .navigation > li > ul > li > a,
 .rtl .main-menu .navigation > li > .megamenu li > a{
   text-align: right;
 }

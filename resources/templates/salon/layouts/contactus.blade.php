@@ -13,15 +13,15 @@
                                     <ul class="info-list clearfix">
                                         <li>
                                             <i class="flaticon-phone-call"></i>
-                                            <p><a href="tel:6668880000">666 888 0000</a></p>
+                                            <p><a href="tel:6668880000">{{$contact_us['phone']}}</a></p>
                                         </li>
                                         <li>
                                             <i class="flaticon-email-2"></i>
-                                            <p><a href="mailto:needhelp@company.com">needhelp@company.com</a></p>
+                                            <p><a href="mailto:needhelp@company.com">{{$contact_us['email']}}</a></p>
                                         </li>
                                         <li>
                                             <i class="flaticon-maps-and-flags"></i>
-                                            <p>66 broklyn golden street line New York, USA</p>
+                                            <p>{{$contact_us['address']}}</p>
                                         </li>
                                     </ul>
                                 </div>
@@ -34,8 +34,8 @@
                                 </div>
                                 <div class="widget-content">
                                     <ul class="footer-social pull-left clearfix">
-                                        <li><a href="index.html"><i class="fab fa-whatsapp"></i></a></li>
-                                        <li><a href="index.html"><i class="fab fa-instagram"></i></a></li>
+                                        <li><a href="{{$contact_us['wa_link']}}"><i class="fab fa-whatsapp"></i></a></li>
+                                        <li><a href="{{$contact_us['ig_link']}}"><i class="fab fa-instagram"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -56,5 +56,5 @@
                 </div>
             </div>
         </div>
-        @include('components.footer')
+        @include('salon.components.footer')
     </footer>

@@ -11,14 +11,14 @@
                         <div class="content-box">
                             <div class="text">
                                 <h2>Overview</h2>
-                                <p class="mt-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti earum delectus accusantium et atque autem incidunt. Aliquam maxime itaque velit ratione nostrum. Tenetur facilis nemo optio omnis impedit quo voluptate!</p>
-                                <p class="mt-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti earum delectus accusantium et atque autem incidunt. Aliquam maxime itaque velit ratione nostrum. Tenetur facilis nemo optio omnis impedit quo voluptate!</p>
+                                <p class="mt-4">{{$overview['title']}}</p>
+                                <p class="mt-4">{{$overview['description']}}</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12 image-column">
-                    <figure class="image-box wow slideInRight animated animated" data-wow-delay="00ms" data-wow-duration="1500ms"><img src="assets/images/resource/about-2.jpg" alt=""></figure>
+                    <figure class="image-box wow slideInRight animated animated" data-wow-delay="00ms" data-wow-duration="1500ms"><img src={{$overview['image']}} alt=""></figure>
                 </div>
             </div>
         </div>

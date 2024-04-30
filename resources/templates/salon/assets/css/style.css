@@ -1,4 +1,4 @@
- 
+
 /* Css For Mremot */
 
 /************ TABLE OF CONTENTS ***************
@@ -44,7 +44,7 @@
 
 
 
-/*** 
+/***
 
 ====================================================================
   Reset
@@ -59,7 +59,7 @@
 }
 
 
-/*** 
+/***
 
 ====================================================================
   Global Settings
@@ -141,7 +141,7 @@ input,button,select,textarea{
 ul,li{
   list-style:none;
   padding:0px;
-  margin:0px; 
+  margin:0px;
 }
 
 input{
@@ -292,7 +292,7 @@ h1,h2,h3,h4,h5,h6{
 
 .handle-preloader .animation-preloader .spinner{
   border: 3px solid #df8e6a;
-  border-top-color: rgba(223, 142, 106, 0.2); 
+  border-top-color: rgba(223, 142, 106, 0.2);
 }
 
 /* AnimaciÃ³n del preloader */
@@ -509,7 +509,7 @@ img {
 
 
 
-/*** 
+/***
 
 ====================================================================
                         Home-Page-One
@@ -871,7 +871,7 @@ img {
 
 .main-menu .navigation > li > ul.from-right{
   left:auto;
-  right:0px;  
+  right:0px;
 }
 
 .main-menu .navigation > li > ul > li{
@@ -881,7 +881,7 @@ img {
 }
 
 .main-menu .navigation > li > ul > li:last-child{
-  border-bottom:none; 
+  border-bottom:none;
 }
 
 .main-menu .navigation > li > ul > li > a,
@@ -932,7 +932,7 @@ img {
 }
 
 .main-menu .navigation > li > ul > li > a:hover{
-  
+
 }
 
 .main-menu .navigation > li > ul > li.dropdown > a:after{
@@ -946,7 +946,7 @@ img {
   font-size:16px;
   font-weight:800;
   text-align:center;
-  z-index:5;  
+  z-index:5;
 }
 
 .main-menu .navigation > li > ul > li > ul{
@@ -972,7 +972,7 @@ img {
 
 .main-menu .navigation > li > ul > li > ul.from-right{
   left:auto;
-  right:0px;  
+  right:0px;
 }
 
 .main-menu .navigation > li > ul > li > ul > li{
@@ -982,11 +982,11 @@ img {
 }
 
 .main-menu .navigation > li > ul > li > ul > li:last-child{
-  border-bottom:none; 
+  border-bottom:none;
 }
 
 .main-menu .navigation > li > ul > li > ul > li:last-child{
-  border-bottom:none; 
+  border-bottom:none;
 }
 
 .main-menu .navigation > li > ul > li > ul > li > a{
@@ -1030,7 +1030,7 @@ img {
 }
 
 .main-menu .navigation > li > ul > li > ul > li > a:hover{
-  
+
 }
 
 .main-menu .navigation > li > ul > li > ul > li.dropdown > a:after{
@@ -1043,7 +1043,7 @@ img {
   line-height:24px;
   font-size:16px;
   font-weight:900;
-  z-index:5;  
+  z-index:5;
 }
 
 .main-menu .navigation > li.dropdown:hover > ul,
@@ -1074,7 +1074,7 @@ img {
   -moz-transition:all 300ms ease;
   -webkit-transition:all 500ms ease;
   -ms-transition:all 300ms ease;
-  -o-transition:all 300ms ease; 
+  -o-transition:all 300ms ease;
 }
 
 .main-menu .navigation li.dropdown .dropdown-btn{
@@ -1095,7 +1095,7 @@ img {
 
 .main-menu .navigation li.current.dropdown .dropdown-btn,
 .main-menu .navigation li:hover .dropdown-btn{
-  
+
 }
 
 .main-menu .navigation li.dropdown ul li.dropdown .dropdown-btn{
@@ -1203,13 +1203,13 @@ img {
 }
 
 .mobile-menu .navbar-collapse{
-  display:block !important; 
+  display:block !important;
 }
 
 .mobile-menu .nav-logo{
   position:relative;
   padding:50px 25px;
-  text-align:left;  
+  text-align:left;
   padding-bottom: 100px;
 }
 
@@ -1348,7 +1348,7 @@ img {
   -moz-transition: all 500ms ease;
   -ms-transition: all 500ms ease;
   -o-transition: all 500ms ease;
-  transition: all 500ms ease; 
+  transition: all 500ms ease;
 }
 
 .mobile-menu .navigation li ul li > a{
@@ -1368,7 +1368,7 @@ img {
   -moz-transition: all 500ms ease;
   -ms-transition: all 500ms ease;
   -o-transition: all 500ms ease;
-  transition: all 500ms ease; 
+  transition: all 500ms ease;
 }
 
 .mobile-menu .navigation li.current > a:before{
@@ -1392,16 +1392,16 @@ img {
   -moz-transition: all 500ms ease;
   -ms-transition: all 500ms ease;
   -o-transition: all 500ms ease;
-  transition: all 500ms ease; 
+  transition: all 500ms ease;
   z-index:5;
 }
 
 .mobile-menu .navigation li.dropdown .dropdown-btn.open{
-  background:#fff; 
+  background:#fff;
   color: #3b3b3b;
   -webkit-transform:rotate(90deg);
   -ms-transform:rotate(90deg);
-  transform:rotate(90deg);  
+  transform:rotate(90deg);
 }
 
 .mobile-menu .navigation li > ul,
@@ -1430,11 +1430,11 @@ img {
   -moz-transition: all 500ms ease;
   -ms-transition: all 500ms ease;
   -o-transition: all 500ms ease;
-  transition: all 500ms ease; 
+  transition: all 500ms ease;
 }
 
 .mobile-menu .social-links li a:hover{
-  
+
 }
 
 div#mCSB_1_container{
@@ -1467,7 +1467,7 @@ div#mCSB_1_container{
 }
 
 .mobile-menu .contact-info ul li a:hover{
-  
+
 }
 
 .mobile-menu .contact-info ul li:last-child{
@@ -1490,7 +1490,7 @@ div#mCSB_1_container{
 }
 
 .main-header .search-box-outer .search-toggler:hover{
-  
+
 }
 
 .search-popup{
@@ -1616,7 +1616,7 @@ div#mCSB_1_container{
   color:#ffffff;
   margin-bottom:20px;
   letter-spacing:1px;
-  text-align:center;  
+  text-align:center;
 }
 
 .search-popup .recent-searches{
@@ -1627,7 +1627,7 @@ div#mCSB_1_container{
 
 .search-popup .recent-searches li{
   display:inline-block;
-  margin:0px 10px 10px 0px; 
+  margin:0px 10px 10px 0px;
 }
 
 .search-popup .recent-searches li a{
@@ -1645,7 +1645,7 @@ div#mCSB_1_container{
 }
 
 .search-popup .recent-searches li a:hover{
-  
+
 }
 
 
@@ -2784,7 +2784,7 @@ div#mCSB_1_container{
   opacity: 1
 }
 
-.gallery-section .owl-dots-style-one .owl-dots .owl-dot span:hover, 
+.gallery-section .owl-dots-style-one .owl-dots .owl-dot span:hover,
 .gallery-section .owl-dots-style-one .owl-dots .owl-dot.active span{
   filter: grayscale(0%);
   -webkit-filter: grayscale(0%);
@@ -3556,7 +3556,7 @@ div#mCSB_1_container{
 
 
 
-/*** 
+/***
 
 ====================================================================
                         Home-Page-Two
@@ -3715,7 +3715,7 @@ div#mCSB_1_container{
   color: #fff;
 }
 
-.main-header.style-two .main-menu .navigation > li.current > a, 
+.main-header.style-two .main-menu .navigation > li.current > a,
 .main-header.style-two .main-menu .navigation > li:hover > a {
 
 }
@@ -4723,7 +4723,7 @@ div#mCSB_1_container{
 
 
 
-/*** 
+/***
 
 ====================================================================
                         About-Page
@@ -5000,7 +5000,7 @@ div#mCSB_1_container{
 
 
 
-/*** 
+/***
 
 ====================================================================
                         Gallery-Page
@@ -5021,7 +5021,7 @@ div#mCSB_1_container{
 }
 
 
-/*** 
+/***
 
 ====================================================================
                         Error-Page
@@ -5072,7 +5072,7 @@ div#mCSB_1_container{
 
 
 
-/*** 
+/***
 
 ====================================================================
                         Service-Page
@@ -5316,7 +5316,7 @@ div#mCSB_1_container{
 }
 
 
-/*** 
+/***
 
 ====================================================================
                         Blog-Page
@@ -5827,7 +5827,7 @@ div#mCSB_1_container{
 
 
 
-/*** 
+/***
 
 ====================================================================
                         Contact-Page
@@ -5992,11 +5992,11 @@ div#mCSB_1_container{
 }
 
 .logo {
-    float: left; 
+    float: left;
     font-size: 24px;
     font-weight: bold;
     text-transform: uppercase;
-    margin-right: 20px; 
+    margin-right: 20px;
     line-height: 70px;
 }
 

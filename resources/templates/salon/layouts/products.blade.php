@@ -7,43 +7,17 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 big-column">
                     <div class="service-inner">
                         <div class="three-item-carousel owl-carousel owl-theme owl-nav-none owl-dots-style-one centred">
+                            @foreach ($products as $product)
                             <div class="service-block-one">
                                 <div class="inner-box">
-                                    <figure class="image-box"><a href="{{ tenant_route('detail', $product->id) }}"><img src="assets/images/service/news-2.jpg" alt=""></a></figure>
+                                    <figure class="image-box"><a href="{{ route('detail', $product->id)}}"><img src="{{$product->image}}" alt=""></a></figure>
                                     <div class="lower-content">
-                                        <h4><a href="">Nail <br />Cutting</a></h4>
-                                        <p>lorem is free text to used.</p>
+                                        <h4><a href="{{ route('detail', $product->id) }}">{{$product->title}}</a></h4>
+                                        <p>{{$product->description}}</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="service-block-one">
-                                <div class="inner-box">
-                                    <figure class="image-box"><a href=""><img src="assets/images/service/news-2.jpg" alt=""></a></figure>
-                                    <div class="lower-content">
-                                        <h4><a href="">Hair <br />Cutting</a></h4>
-                                        <p>lorem is free text to used.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="service-block-one">
-                                <div class="inner-box">
-                                    <figure class="image-box"><a href=""><img src="assets/images/service/news-2.jpg" alt=""></a></figure>
-                                    <div class="lower-content">
-                                        <h4><a href="">Hair <br />Cutting</a></h4>
-                                        <p>lorem is free text to used.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="service-block-one">
-                                <div class="inner-box">
-                                    <figure class="image-box"><a href=""><img src="assets/images/service/news-2.jpg" alt=""></a></figure>
-                                    <div class="lower-content">
-                                        <h4><a href="">Computer <br> Kece</a></h4>
-                                        <p>lorem is free text to used.</p>
-                                    </div>
-                                </div>
-                            </div>
-
+                            @endforeach
                         </div>
                     </div>
                 </div>

@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('salon.layouts.main')
 @section('content')
 <!-- jumbotron-section -->
 @include('salon.layouts.jumbotron')

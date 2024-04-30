@@ -225,11 +225,11 @@
 		loadingClass: 'owl-loading',
 		rtlClass: 'owl-rtl',
 		responsiveClass: 'owl-responsive',
-		dragClass: 'owl-drag',
+		// dragClass: 'owl-drag',
 		itemClass: 'owl-item',
 		stageClass: 'owl-stage',
 		stageOuterClass: 'owl-stage-outer',
-		grabClass: 'owl-grab'
+		// grabClass: 'owl-grab'
 	};
 
 	/**
@@ -729,7 +729,7 @@
 			this.invalidate('position');
 		}
 
-		this.$element.toggleClass(this.options.grabClass, event.type === 'mousedown');
+		// this.$element.toggleClass(this.options.grabClass, event.type === 'mousedown');
 
 		this.speed(0);
 
@@ -806,7 +806,7 @@
 
 		$(document).off('.owl.core');
 
-		this.$element.removeClass(this.options.grabClass);
+		// this.$element.removeClass(this.options.grabClass);
 
 		if (delta.x !== 0 && this.is('dragging') || !this.is('valid')) {
 			this.speed(this.settings.dragEndSpeed || this.settings.smartSpeed);
@@ -1417,8 +1417,8 @@
 			.removeClass(this.options.loadingClass)
 			.removeClass(this.options.loadedClass)
 			.removeClass(this.options.rtlClass)
-			.removeClass(this.options.dragClass)
-			.removeClass(this.options.grabClass)
+			// .removeClass(this.options.dragClass)
+			// .removeClass(this.options.grabClass)
 			.attr('class', this.$element.attr('class').replace(new RegExp(this.options.responsiveClass + '-\\S+\\s', 'g'), ''))
 			.removeData('owl.carousel');
 	};

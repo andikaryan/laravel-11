@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 class Content extends Model
 {
     use HasFactory;
-    
+
     protected $fillable = [
         'page_id',
         'hero',

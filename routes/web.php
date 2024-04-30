@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\CmsController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\RouteController;
 use Illuminate\Support\Facades\Route;
 
 foreach (config('tenancy.central_domains') as $domain) {

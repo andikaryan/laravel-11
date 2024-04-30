@@ -16,11 +16,11 @@
                     <nav class="main-menu navbar-expand-md navbar-light">
                         <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                             <ul class="navigation scroll-nav clearfix">
-                                <li><a href="{{ route('home') }}">Home</a></li> 
+                                <li><a href="{{ route('landing') }}">Home</a></li>
                                 <li><a href="#overview">Overview</a>
                                 <li><a href="#product">Product</a>
-                                <li><a href="#testimonies">Testimonies</a></li>   
-                                <li><a href="#contact">Contact Us</a></li>   
+                                <li><a href="#testimonies">Testimonies</a></li>
+                                <li><a href="#contact">Contact Us</a></li>
                             </ul>
                         </div>
                     </nav>

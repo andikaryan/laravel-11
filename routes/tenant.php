@@ -6,6 +6,7 @@ use App\Http\Controllers\RouteController;
 use Illuminate\Support\Facades\Route;
 use Stancl\Tenancy\Middleware\InitializeTenancyByDomain;
 use Stancl\Tenancy\Middleware\PreventAccessFromCentralDomains;
+use Stancl\Tenancy\Middleware\ScopeSessions;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,7 +24,9 @@ Route::middleware([
     'web',
     InitializeTenancyByDomain::class,
     PreventAccessFromCentralDomains::class,
+    ScopeSessions::class,
 ])->group(function () {
-    Route::get('/', [RouteController::class, 'index']);
-    Route::get('/', [RouteController::class, 'show'])->name('detail');
+    Route::get('/', [RouteController::class, 'index'])->name('landing');
+    Route::get('/product/{id}', [RouteController::class, 'show'])->name('detail');
+
 });

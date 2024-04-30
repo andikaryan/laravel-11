@@ -2,7 +2,7 @@
 
 
 @media only screen and (max-width: 5000px){
-  
+
   .boxed_wrapper{
     overflow: hidden;
   }
@@ -495,7 +495,7 @@
     line-height: 45px;
   }
 
-  #content_block_7 .content-box .inner-box .text, 
+  #content_block_7 .content-box .inner-box .text,
   #content_block_7 .content-box .inner-box .list{
     width: 100%;
   }
@@ -565,7 +565,7 @@
   .service-details-content .two-column .image{
     margin-bottom: 30px;
   }
-  
+
   .page-title .title-box .title-text{
     top: -30px;
   }
@@ -593,7 +593,7 @@
 }
 
 @media only screen and (max-width: 599px){
-  
+
   .blog-details-content .author-box .inner{
     padding-left: 0px;
   }
